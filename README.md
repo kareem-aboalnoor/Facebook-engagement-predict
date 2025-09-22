@@ -50,7 +50,7 @@ This project leverages machine learning to classify Facebook posts into *engagem
 
 ### 1. Jupyter Notebook
 
-- Open Facebook_Engagement_Clustering.ipynb and run the cells to explore data cleaning, preprocessing, clustering, PCA visualization, and Random Forest classification.
+- Open social_media_clustering.ipynb and run the cells to explore data cleaning, preprocessing, clustering, PCA visualization, and Random Forest classification.
 
 ### 2. Streamlit App
 
