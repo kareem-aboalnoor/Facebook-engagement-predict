@@ -1,39 +1,60 @@
-
 # 📊 Facebook Post Engagement Classifier
 
-Predict engagement levels of Facebook posts using *clustering techniques* and an interactive *Streamlit app*.
+Analyze and predict engagement levels of Facebook posts using *clustering and machine learning, with an interactive **Streamlit app*.
 
 ---
 
-## 📝 Project Overview
+## 🔍 Project Overview
 
-This project analyzes Facebook posts and groups them into engagement levels using *clustering* based on:
+This project leverages machine learning to classify Facebook posts into *engagement levels* based on their reactions, comments, shares, and post type. Posts are categorized into three levels:
 
-- 👍 Likes, 😍 Loves, 😮 Wows, 😂 Hahas, 😢 Sads, 😡 Angrys  
-- 💬 Comments and 🔁 Shares  
-- Post type (Photo, Video, Link…)  
+- 💤 *Low Engagement*  
+- 👍 *Medium Engagement*  
+- 🔥 *High Engagement*  
 
-After clustering, posts are classified into three engagement levels:
-
-- 💤 Low Engagement  
-- 👍 Medium Engagement  
-- 🔥 High Engagement  
-
-*Goal:* Help marketers and content creators understand which posts are likely to generate high engagement and optimize their content strategy.
+*Purpose:* Empower marketers and content creators to identify high-performing posts and optimize their social media strategy.
 
 ---
 
-## ⚙ Features
+## 🛠 Tools & Libraries
 
-- Clustering to define engagement categories.  
-- Feature engineering on Facebook reactions and interactions.  
-- Streamlit web app for interactive predictions.  
-- Auto-calculation of total reactions for each post.  
+- *Python* – Core programming language  
+- *Pandas & NumPy* – Data manipulation  
+- *Scikit-learn* – LabelEncoder, MinMaxScaler, KMeans, PCA, Random Forest  
+- *Matplotlib & Seaborn* – Data visualization  
+- *Streamlit* – Interactive web application  
+
+---
+
+## ⚡ Project Steps
+
+1. *Data Cleaning & Exploration*  
+   - Cleaned the dataset and handled missing values  
+   - Performed Exploratory Data Analysis (EDA) to understand trends  
+
+2. *Preprocessing*  
+   - Encoded categorical features using LabelEncoder  
+   - Scaled numerical features with MinMaxScaler  
+
+3. *Clustering*  
+   - Applied *KMeans* to group posts into engagement clusters  
+   - Visualized clusters using *PCA* for dimensionality reduction  
+
+4. *Classification*  
+   - Assigned cluster labels to the dataset  
+   - Trained a *Random Forest Classifier* to predict engagement levels for new posts  
 
 ---
 
 ## 🚀 How to Run
 
-1. Clone the repository:  
+### 1. Jupyter Notebook
+
+- Open Facebook_Engagement_Clustering.ipynb and run the cells to explore data cleaning, preprocessing, clustering, PCA visualization, and Random Forest classification.
+
+### 2. Streamlit App
+
+- Ensure app.py and rf_with_scaler_encoder.pkl are in the same folder.  
+- Open a terminal in that folder and run:  
 ```bash
-git clone https://github.com/yourusername/facebook-engagement-predictor.git
+streamlit run app.py
